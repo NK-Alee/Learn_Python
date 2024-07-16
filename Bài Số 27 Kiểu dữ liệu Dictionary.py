@@ -41,7 +41,7 @@ sinhvien["malop"] = "DH02"
 
 print(sinhvien)
 
-# Cách 2
+# Cách 2 phương thức .update
 
 sinhvien.update({"malop" : "DH03" ,"diemtrungbinh" : 8.6})
 
@@ -55,8 +55,54 @@ sinhvien["namhoc"] = 2025
 
 print(sinhvien)
 
-# Cách 2
+# Cách 2 .update
 
 sinhvien.update({"noisinh" : "Dong Nai"})
 
 print(sinhvien)
+
+# Xóa đi loại bỏ các mục
+
+"""
+# Cách 1 phương thức pop() loại bỏ mục có tên khóa được chỉ định
+
+sinhvien.pop("noisinh")
+
+print(sinhvien)
+
+# Cách 2 phương thức popitem() xóa mục được chèn cuối cùng (trong các phiên bản trước 3.7), thay vào đó , một mục ngẫu nhiên sẽ bị xóa :
+    
+sinhvien.popitem()
+
+print(sinhvien)   
+
+# Cách 3 phương thức del khóa loại bỏ mục có tên khóa được chỉ định , hoặc toàn bộ từ điển:
+
+del sinhvien["hovaten"]
+
+print(sinhvien)
+
+# Cách 4 phương thức clear() xóa đi toàn bộ hàm thư viện
+
+print(sinhvien)
+
+sinhvien.clear()
+
+print(sinhvien)
+"""
+# In tất cả các tên khóa trong từ điển , từng cái một:
+
+for x in sinhvien:
+    print(x)
+    
+# Duyệt các giá trị value
+for x in sinhvien.values():
+    print(x)
+    
+# Duyệt các khóa key 
+for x in sinhvien.keys():
+    print(x)
+    
+# Duyệt các cặp khóa - giá trị:
+for x, y in sinhvien.items():
+    print(x, y)
