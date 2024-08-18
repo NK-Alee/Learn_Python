@@ -1,2 +1,2 @@
-# python
-Learn Python Basic
+# KHÓA HỌC PYTHON CƠ BẢN
+---
