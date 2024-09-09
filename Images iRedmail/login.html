@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <title>Login To Manage Your Mail Domains & Accounts</title>
+
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/default/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/default/css/screen.css" />
+    <link rel="icon" type="image/x-icon"
+        href="/iredadmin/static/favicon.ico" />
+
+    <style type="text/css">
+        /* html { background: #333333; } */
+        html {
+            background: url('/iredadmin/static/background.jpg') no-repeat center center fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-size: cover;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function change_url(domain, baseurl) {
+            if (domain.options[domain.selectedIndex].value != 'none') {
+                location.href = baseurl + domain.options[domain.selectedIndex].value;
+            }
+        }
+    </script>
+ </head>
+
+
+
+
+
+<body class="login">
+
+    <div class="login-box">
+        <div class="login-border">
+            <div class="login-style">
+                <div class="login-header">
+                    <div class="logo clear">
+                        
+                        <img src="/iredadmin/static/emailserver.vn.png" alt="logo" class="picture" height="40px" />
+                        
+                        <!-- <span class="textlogo">
+                            <span class="title">Login To Manage Your Mail Domains & Accounts</span>
+                        </span> -->
+                    </div>
+                </div>
+
+                
+                <p class="clear">
+                    
+                </p>
+
+                <form name="login" method="post" action="/iredadmin/login">
+                    <div class="login-inside">
+                        <div class="login-data">
+                            <div class="row clear">
+                                <label class="size-80 fl-space">Username</label>
+                                <input type="text" name="username" size="25" class="text" id="user" />
+                            </div>
+
+                            <div class="row clear">
+                                <label class="size-80 fl-space">Password</label>
+                                <input type="password" name="password" size="25" class="text" id="password" />
+                            </div>
+
+                            <input type="submit" name="form_login" class="button green" value="Login" />
+                        </div>
+                    </div>
+
+                    <div class="login-footer clear">
+                        <span class="text fr">
+                            <select name="lang" onchange="change_url(this, baseurl='/iredadmin/login?lang=');">
+                                
+                                <option value="bg_BG" >Bulgarian</option>
+                                
+                                <option value="cs_CZ" >Čeština</option>
+                                
+                                <option value="da_DK" >Dansk</option>
+                                
+                                <option value="de_DE" >Deutsch (Deutsch)</option>
+                                
+                                <option value="en_US" selected>English (US)</option>
+                                
+                                <option value="es_ES" >Español</option>
+                                
+                                <option value="fi_FI" >Finnish (Suomi)</option>
+                                
+                                <option value="fr_FR" >Français</option>
+                                
+                                <option value="hu_HU" >Hungarian</option>
+                                
+                                <option value="it_IT" >Italiano</option>
+                                
+                                <option value="ja_JP" >Japanese (日本語)</option>
+                                
+                                <option value="ko_KR" >Korean</option>
+                                
+                                <option value="lv_LV" >Latvian</option>
+                                
+                                <option value="nl_NL" >Netherlands</option>
+                                
+                                <option value="pl_PL" >Polski</option>
+                                
+                                <option value="pt_BR" >Portuguese (Brazilian)</option>
+                                
+                                <option value="ru_RU" >Русский</option>
+                                
+                                <option value="sl_SI" >Slovenian</option>
+                                
+                                <option value="sv_SE" >Swedish (Svenska)</option>
+                                
+                                <option value="vi_VN" >Vietnamese</option>
+                                
+                                <option value="zh_CN" >简体中文</option>
+                                
+                                <option value="zh_TW" >繁體中文</option>
+                                
+                            </select>
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
