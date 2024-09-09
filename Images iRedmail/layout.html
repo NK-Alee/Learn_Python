@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title> Dashboard </title>
+
+    
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/default/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/default/css/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/fontawesome/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/iredadmin/static/default/css/screen.css" />
+    <link rel="icon" type="image/x-icon" href="/iredadmin/static/favicon.ico" />
+</head>
+
+<body>
+    <div class="pagetop">
+        <div class="head pagesize">
+            <div class="head_top">
+                <div class="topbuts">
+                    <ul class="clear">
+                        <li><a href="/iredadmin/profile/user/general/postmaster@alee.monster">Preferences</a></li>
+                        <li><a href="/iredadmin/logout" class="red">Logout</a></li>
+                    </ul>
+
+                    <div class="user clear">
+                        <span class="user-detail">
+                            <span class="text">Logged in as postmaster@alee.monster</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="logo clear">
+                    <a href="/iredadmin/">
+                            <img style="height: 60px;"
+                                src="/iredadmin/static/emailserver.vn.png"
+                                alt="logo"
+                                class="picture"
+                                />
+                        
+                        <span class="textlogo">
+                            <span class="title"></span>
+                            <span class="text"></span>
+                        </span>
+                    </a>
+                </div>
+            </div> <!-- *** End head_top *** -->
+
+            <div class="menu"><!-- menu -->
+                <ul class="clear">
+                    <li class="active"><a href="/iredadmin/dashboard">Dashboard</a></li>
+                    <li ><a href="/iredadmin/domains">Domains and Accounts</a></li>
+
+                    
+                    
+                        <li ><a href="/iredadmin/admins">Admins</a></li>
+                    
+
+                    <li ><a href="#">Activities</a>
+                        <ul>
+                            <li><a href="/iredadmin/activities/admins">Admin Log</a></li>
+                        </ul>
+                    </li>
+
+                    <li >
+                        <a href="#"><i class="fa fa-plus fa-lg"></i> Add...</a>
+                        <ul>
+                            <li><a href="/iredadmin/create/domain">Domain</a></li>
+                            <li><a href="/iredadmin/create/admin">Admin</a></li>
+                            <li><a href="/iredadmin/create/user">User</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div> <!-- End menu -->
+
+        </div> <!-- End head layout -->
+    </div><!-- End page top -->
+
+    
+
+    <div class="main pagesize"> <!-- *** mainpage layout *** -->
+        <div class="main-wrap">
+            <div class="page clear">
+                
+                
+
+
+
+
+<div class="columns clear">
+    <div class="col1-3">
+        <h2>System Information</h2>
+        <div class="box-wrap clear">
+            <table class="basic">
+                <tbody>
+                    
+                    <tr>
+                        <th>Number of domains</th>
+                        <td class="full"><a href="/iredadmin/domains">1</a></td>
+                    </tr>
+
+                    
+                        <tr>
+                            <th>Number of users</th>
+                            <td class="full">2</td>
+                        </tr>
+                    
+
+                    
+                        <tr>
+                            <th>Stored emails</th>
+                            <td class="full">12 Emails. 128 KB.</td>
+                        </tr>
+                    
+
+                    <tr>
+                        <th>iRedMail</th>
+                        <td>1.7.1</td>
+                    </tr>
+                    <tr>
+                        <th>iRedAdmin</th>
+                        <td>2.6
+                            
+                                (MySQL)
+                            
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <th>Hostname</th>
+                        <td>iredmail.alee.monster</td>
+                    </tr>
+
+                    
+                    <tr>
+                        <th>Uptime</th>
+                        <td>0 days, 1 hours, 21 minutes.</td>
+                    </tr>
+                    
+
+                    <tr>
+                        <th>Server Load</th>
+                        <td>0.000, 0.012, 0.104</td>
+                    </tr>
+
+                    
+                    
+                        <tr>
+                            <th>Network (eth0)</th>
+                            <td>103.15.48.32</td>
+                        </tr>
+                    
+                        <tr>
+                            <th>Network (eth1)</th>
+                            <td>103.15.48.32</td>
+                        </tr>
+                    
+                        <tr>
+                            <th>Network (eth1)</th>
+                            <td>192.168.48.32</td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div> 
+    </div>
+
+    <div class="col2-4">
+        <div class="box-wrap clear">
+            <h3 style="font-size: 20px;">Upgrade to iRedAdmin-Pro for more features</h3>
+            <ul class="standard clean-padding bt-space10">
+                <li><a href="https://docs.iredmail.org/iredadmin-pro.restful.api.html">RESTful API interface</a></li>
+                <li>Domain level admins. Grant clients to manage their own domains.</li>
+                <li>Unlimited mailing list and mail alias accounts</li>
+                <li>Manage more domain profiles: forwarding, bcc, relay, alias domain, catch-all</li>
+                <li>Manage more user profiles: forwarding, bcc, relay, alias addresses, real-time quota usage report</li>
+                <li>Greylisting setting</li>
+                <li>Throttle setting</li>
+                <li>View basic info of received and sent emails</li>
+                <li>Manage quarantined mails</li>
+                <li>User self-service: change password, mail forwarding, white/blacklists, spam policy</li>
+                <li>Per-domain and per-user service restrictions</li>
+                <li>And many more ...</li>
+            </ul>
+            <a href="https://www.iredmail.org/admin_panel.html" class="button" />Comparison and Pricing</a>
+        </div>
+    </div><!-- .col2-4 -->
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="footer">
+        <div class="pagesize clear">
+            <p class="bt-space0">
+                &copy; <a href="https://www.iredmail.org/" target="_blank" rel="noopener">iRedMail</a>
+                
+                    | <a href="https://forum.iredmail.org/" target="_blank" rel="noopener">Support</a>
+                
+            </p>
+        </div>
+    </div>
+    
+
+    
+    <script type="text/javascript">
+        // redirect to url
+        function change_url(domain, baseurl) {
+            if ( domain.options[domain.selectedIndex].value != 'none' ) {
+                location.href = baseurl + domain.options[domain.selectedIndex].value;
+            }
+        };
+    </script>
+        <script type="text/javascript" src="/iredadmin/static/js/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="/iredadmin/static/js/jquery.tooltip.js"></script>
+    <script type="text/javascript" src="/iredadmin/static/js/jquery.idtabs.js"></script>
+    <script type="text/javascript" src="/iredadmin/static/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="/iredadmin/static/js/jquery.quickfilter.js"></script>
+    <script type="text/javascript" src="/iredadmin/static/js/stupidtable.min.js"></script>
+
+    <script type="text/javascript">
+        function remove_element_by_id(css_id) {
+            document.getElementById(css_id).remove();
+        }
+
+        
+        function add_input_inside_id(css_id, name) {
+            
+            var e = document.getElementById(css_id);
+            var length = e.children.length;
+
+            
+            var new_id = name + '_' + (length + 1);
+
+            var elem = document.createElement('div');
+            elem.innerHTML = '<div class="form-field clear" id="' + new_id + '">' +
+                             '<h4 class="size-250 fl-space">&nbsp;</h4>' +
+                             '<input type="text" size="35" class="text" ' +
+                                'name="' + name + '" ' +
+                                'value="" />' +
+                             '<input type="button" value="+" onclick="add_input_inside_id(\'' + css_id + '\', \'' + name + '\')" />' +
+                             '<input type="button" value="-" onclick="remove_element_by_id(\'' + new_id  + '\')" />' +
+                             '</div>';
+
+            document.getElementById(css_id).appendChild(elem);
+        }
+
+    
+    $(document).ready(function() {
+        
+        $('.menu li').hover(function () {
+            $(this).find('ul:first').css({'visibility': 'visible', 'display': 'none'}).slideDown();
+        }, function () {
+            $(this).find('ul:first').css({visibility: "hidden"});
+        });
+
+        
+        
+        $('.content-box .select-all').click(function () {
+            if ($(this).is(':checked'))
+                $(this).parent().parent().parent().parent().find('[type="checkbox"]').prop('checked', true);
+            else
+                $(this).parent().parent().parent().parent().find('[type="checkbox"]').prop('checked', false);
+        });
+
+        
+        $('.content-box .tabs').idTabs();
+
+        
+        $('.notification .close').click(function () {
+            $(this).parent().fadeOut(100);
+            return false;
+        });
+
+        
+        $("a[title], img[title], span[title], input[title], i[title]").tooltip({
+            position: "top center",
+            offset: [-5, 0],
+            predelay: 200,
+            delay: 100,
+            effect: "fade",
+            opacity: 1
+        });
+
+        
+        $('.modal-link').fancybox({
+            'modal'                 : false,
+            'hideOnOverlayClick'    : true,
+            'hideOnContentClick'    : false,
+            'enableEscapeButton'    : true,
+            'showCloseButton'       : true,
+            'speedOut'              : 0
+        });
+        $("a[href$='gif']").fancybox();
+        $("a[href$='jpg']").fancybox();
+        $("a[href$='png']").fancybox();
+
+        
+        $("table").stupidtable();
+
+        
+        $('.box-slide-head > td > span').click(function (event) {
+            tgt = $(event.target);
+            if (tgt.hasClass('clickable')) {
+                return;
+            }
+
+            mailid = $(this).parents('tr').attr('id');
+            mailid_orig = $(this).parents('tr').attr('mailid');
+            body = $('#box-tr-'+mailid);
+            if (!body.hasClass('box-slide-tr')) {
+                $.get('/iredadmin/activities/quarantined/raw/'+mailid_orig, function(data) {
+                    if (data != ''){
+                        $('#'+mailid).after(data);
+                    }
+                });
+            }
+            if (body.is(':visible')) {
+                body.hide();
+            } else {
+                body.show();
+            }
+            return false;
+        });
+
+        
+        $('#account_delete_date').hide()
+        $('#account_list_actions').change(function(){
+            if ($(this).val() == 'delete') {
+                $('#account_delete_date').show();
+            } else {
+                $("#account_delete_date").hide();
+            }
+        });
+
+        $('#domain_delete_date').hide()
+        $('#domain_list_actions').change(function(){
+            if ($(this).val() == 'delete') {
+                $('#domain_delete_date').show();
+            } else {
+                $("#domain_delete_date").hide();
+            }
+        });
+
+        
+        if ($('#mark_as_global_admin').is(':checked') == false) {
+            $('.normal_admin_create_domain_options').show();
+        } else {
+            $(".normal_admin_create_domain_options").hide();
+        }
+        $('#mark_as_global_admin').change(function(){
+            if ($(this).is(':checked') == true) {
+                $('.normal_admin_create_domain_options').hide();
+            } else {
+                $(".normal_admin_create_domain_options").show();
+            }
+        });
+
+        
+        if ($('#normal_admin_options').is(':checked') == true) {
+            $('.normal_admin_options').show();
+        } else {
+            $(".normal_admin_options").hide();
+        }
+        $('#normal_admin_options').change(function(){
+            if ($(this).is(':checked') == true) {
+                $('.normal_admin_options').show();
+                $('.normal_admin_options').show();
+            } else {
+                $(".normal_admin_options").hide();
+            }
+        });
+    });
+    </script>
+    
+
+    
+</body>
+</html>
