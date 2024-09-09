@@ -54,71 +54,29 @@
                     
                 </p>
 
-                <form name="login" method="post" action="/iredadmin/login">
+                <form name="login" method="post" action="{{ctx.homepath}}/login">
                     <div class="login-inside">
                         <div class="login-data">
                             <div class="row clear">
-                                <label class="size-80 fl-space">Username</label>
+                                <label class="size-80 fl-space">{{ _('Username')}}</label>
                                 <input type="text" name="username" size="25" class="text" id="user" />
                             </div>
 
                             <div class="row clear">
-                                <label class="size-80 fl-space">Password</label>
+                                <label class="size-80 fl-space">{{ _('Password') }}</label>
                                 <input type="password" name="password" size="25" class="text" id="password" />
                             </div>
 
-                            <input type="submit" name="form_login" class="button green" value="Login" />
+                            <input type="submit" name="form_login" class="button green" value="{{ _('Login') }}" />
                         </div>
                     </div>
 
                     <div class="login-footer clear">
                         <span class="text fr">
-                            <select name="lang" onchange="change_url(this, baseurl='/iredadmin/login?lang=');">
-                                
-                                <option value="bg_BG" >Bulgarian</option>
-                                
-                                <option value="cs_CZ" >Čeština</option>
-                                
-                                <option value="da_DK" >Dansk</option>
-                                
-                                <option value="de_DE" >Deutsch (Deutsch)</option>
-                                
-                                <option value="en_US" selected>English (US)</option>
-                                
-                                <option value="es_ES" >Español</option>
-                                
-                                <option value="fi_FI" >Finnish (Suomi)</option>
-                                
-                                <option value="fr_FR" >Français</option>
-                                
-                                <option value="hu_HU" >Hungarian</option>
-                                
-                                <option value="it_IT" >Italiano</option>
-                                
-                                <option value="ja_JP" >Japanese (日本語)</option>
-                                
-                                <option value="ko_KR" >Korean</option>
-                                
-                                <option value="lv_LV" >Latvian</option>
-                                
-                                <option value="nl_NL" >Netherlands</option>
-                                
-                                <option value="pl_PL" >Polski</option>
-                                
-                                <option value="pt_BR" >Portuguese (Brazilian)</option>
-                                
-                                <option value="ru_RU" >Русский</option>
-                                
-                                <option value="sl_SI" >Slovenian</option>
-                                
-                                <option value="sv_SE" >Swedish (Svenska)</option>
-                                
-                                <option value="vi_VN" >Vietnamese</option>
-                                
-                                <option value="zh_CN" >简体中文</option>
-                                
-                                <option value="zh_TW" >繁體中文</option>
-                                
+                            <select name="lang" onchange="change_url(this, baseurl='{{ctx.homepath}}/login?lang=');">
+                                {% for lang in languagemaps |sort %}
+                                    <option value="{{ lang |e }}" {% if ctx.lang == lang %}selected{%endif%}>{{ languagemaps[lang] |e }}</option>
+                                {% endfor %}
                             </select>
                         </span>
                     </div>
@@ -128,5 +86,4 @@
         </div>
     </div>
 </body>
-
 </html>
